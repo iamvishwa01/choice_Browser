@@ -25,7 +25,7 @@ public class Reporting extends TestListenerAdapter {
         extent.setSystemInfo("Company Name", "Test");
         extent.setSystemInfo("Application", "HRM");
         extent.setSystemInfo("Project", "HRM");
-        extent.setSystemInfo("Tester", "Shivam Vishwakarma");
+        extent.setSystemInfo("Tester", "Sujeet Vishwakarma");
         extent.setSystemInfo("Environment", "QA");
         extent.attachReporter(spark);
     }

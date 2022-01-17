@@ -29,7 +29,7 @@ public class SaucdLogin_Test extends BaseClass{
         s1.clickLogin();
         extentTest.info("Login Button clicked");
         info("Login Button clicked");
-        if(driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html")){
+        if(driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html11")){
             extentTest.pass("Login Successful");
             info("login successful");
             Assert.assertTrue(true);
