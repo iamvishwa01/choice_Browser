@@ -1,6 +1,9 @@
 package com.SauceLabs.testcases;
 
 
+import com.SauceLabs.pages.openmrs.OPenMRS_dashboard;
+import com.SauceLabs.pages.openmrs.RegisterPatient;
+import com.SauceLabs.pages.openmrs.openmrsLogin;
 import com.SauceLabs.utility.ReadConfig;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -37,7 +40,9 @@ public class BaseClass {
     ReadConfig readConfig = new ReadConfig();
     ExtentReports extent = new ExtentReports();
     ExtentTest extentTest;
-
+    public OPenMRS_dashboard op;
+    public openmrsLogin o1;
+    public RegisterPatient rp;
     public static String captureScreenshot(WebDriver driver,String screenshotName) throws IOException {
         String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
@@ -76,8 +81,8 @@ public class BaseClass {
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
        info("Browser Maximized");
-        driver.get(readConfig.getApplicationURL());
-        info("Loading application URL");
+//        driver.get(readConfig.getApplicationURL());
+//        info("Loading application URL");
     }
     @AfterClass
         public void Teardown(){

@@ -51,4 +51,16 @@ public class ReadConfig {
         String logpath = pro.getProperty("logpath");
         return logpath;
     }
+    public String getclinicURL(){
+        String clinicpath = pro.getProperty("clinic");
+        return clinicpath;
+    }
+    public String getClinicUsername(){
+        String username = pro.getProperty("clinic_username");
+        return username;
+    }
+    public String getClinicpassword(){
+        String password = pro.getProperty("clinic_password");
+        return password;
+    }
 }
