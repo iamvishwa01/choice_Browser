@@ -17,6 +17,7 @@ public class addCart_001 extends BaseClass{
     @Test
     public void LoginSauceLabs() throws IOException {
         extentTest = extent.createTest("Validate sauce labs Login");
+        driver.get(readConfig.getApplicationURL());
         s1 = new SauceLabs_Login(driver);
         s1.setUsername();
         s1.setPassword();
