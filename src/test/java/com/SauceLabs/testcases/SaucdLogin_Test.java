@@ -19,6 +19,7 @@ public class SaucdLogin_Test extends BaseClass{
     public void LoginSauceLabs() throws IOException {
         extentTest = extent.createTest("Validate sauce labs Login");
         startTestCase("LoginSauceLabs");
+        driver.get(readConfig.getApplicationURL());
         s1 = new SauceLabs_Login(driver);
         s1.setUsername();
         extentTest.info("username entered");
@@ -29,7 +30,7 @@ public class SaucdLogin_Test extends BaseClass{
         s1.clickLogin();
         extentTest.info("Login Button clicked");
         info("Login Button clicked");
-        if(driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html11")){
+        if(driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html")){
             extentTest.pass("Login Successful");
             info("login successful");
             Assert.assertTrue(true);

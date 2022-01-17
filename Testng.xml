@@ -11,9 +11,6 @@
             <class name="com.SauceLabs.testcases.SaucdLogin_Test"/>
             <class name="com.SauceLabs.testcases.addCart_001"/>
             <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_OpenMRS_Login"/>
-<!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_Logout"/>-->
-
-
         </classes>
     </test>
 </suite>
