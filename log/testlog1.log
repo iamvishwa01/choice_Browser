@@ -1,31 +1,31 @@
-2022-01-15 22:32:39,689 [main] INFO SauceLabs - ****************************************************************************************
-2022-01-15 22:32:39,699 [main] INFO SauceLabs - #################                Starting the test          ########################
-2022-01-15 22:32:39,699 [main] INFO SauceLabs - ****************************************************************************************
-2022-01-15 22:32:43,036 [main] INFO SauceLabs - Chrome browser launched
-2022-01-15 22:32:43,382 [main] INFO SauceLabs - Browser Maximized
-2022-01-15 22:32:45,428 [main] INFO SauceLabs - Loading application URL
-2022-01-15 22:32:45,479 [main] INFO SauceLabs - ****************************************************************************************
-2022-01-15 22:32:45,545 [main] INFO SauceLabs - #################                LoginSauceLabs          ########################
-2022-01-15 22:32:45,545 [main] INFO SauceLabs - ****************************************************************************************
-2022-01-15 22:32:45,788 [main] INFO SauceLabs - username entered
-2022-01-15 22:32:45,965 [main] INFO SauceLabs - Password entered
-2022-01-15 22:32:46,236 [main] INFO SauceLabs - Login Button clicked
-2022-01-15 22:32:46,272 [main] INFO SauceLabs - login successful
-2022-01-15 22:32:46,594 [main] INFO SauceLabs - Logout successful
-2022-01-15 22:32:47,474 [main] INFO SauceLabs - ####################            -E---N---D-             #######################
-2022-01-15 22:32:47,476 [main] INFO SauceLabs - ****************************************************************************************
-2022-01-15 22:32:47,486 [main] INFO SauceLabs - #################                Starting the test          ########################
-2022-01-15 22:32:47,486 [main] INFO SauceLabs - ****************************************************************************************
-2022-01-15 22:32:48,954 [main] INFO SauceLabs - Chrome browser launched
-2022-01-15 22:32:49,144 [main] INFO SauceLabs - Browser Maximized
-2022-01-15 22:32:52,488 [main] INFO SauceLabs - Loading application URL
-2022-01-15 22:32:53,030 [main] INFO SauceLabs - login successful
-2022-01-15 22:32:53,369 [main] INFO SauceLabs - clicked on cart
-2022-01-15 22:32:53,460 [main] INFO SauceLabs - clicked on checkout button
-2022-01-15 22:32:53,868 [main] INFO SauceLabs - fname,lname and postal code provided
-2022-01-15 22:32:53,960 [main] INFO SauceLabs - placing order
-2022-01-15 22:32:54,075 [main] INFO SauceLabs - order placed
-2022-01-15 22:32:54,120 [main] INFO SauceLabs - Verifying order
-2022-01-15 22:32:54,123 [main] INFO SauceLabs - order place successfully
-2022-01-15 22:32:54,473 [main] INFO SauceLabs - logged out successfully
-2022-01-15 22:32:55,232 [main] INFO SauceLabs - ####################            -E---N---D-             #######################
+2022-01-17 08:54:41,902 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-17 08:54:41,902 [main] INFO SauceLabs - #################                Starting the test          ########################
+2022-01-17 08:54:41,902 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-17 08:54:53,662 [main] INFO SauceLabs - Chrome browser launched
+2022-01-17 08:54:54,134 [main] INFO SauceLabs - Browser Maximized
+2022-01-17 08:54:57,293 [main] INFO SauceLabs - Loading application URL
+2022-01-17 08:54:58,434 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-17 08:54:58,449 [main] INFO SauceLabs - #################                LoginSauceLabs          ########################
+2022-01-17 08:54:58,449 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-17 08:54:58,988 [main] INFO SauceLabs - username entered
+2022-01-17 08:54:59,285 [main] INFO SauceLabs - Password entered
+2022-01-17 08:54:59,929 [main] INFO SauceLabs - Login Button clicked
+2022-01-17 08:55:00,001 [main] INFO SauceLabs - login successful
+2022-01-17 08:55:05,076 [main] INFO SauceLabs - Logout successful
+2022-01-17 08:55:08,485 [main] INFO SauceLabs - ####################            -E---N---D-             #######################
+2022-01-17 08:55:08,516 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-17 08:55:08,516 [main] INFO SauceLabs - #################                Starting the test          ########################
+2022-01-17 08:55:08,516 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-17 08:55:11,075 [main] INFO SauceLabs - Chrome browser launched
+2022-01-17 08:55:12,151 [main] INFO SauceLabs - Browser Maximized
+2022-01-17 08:55:14,445 [main] INFO SauceLabs - Loading application URL
+2022-01-17 08:55:15,351 [main] INFO SauceLabs - login successful
+2022-01-17 08:55:16,222 [main] INFO SauceLabs - clicked on cart
+2022-01-17 08:55:16,362 [main] INFO SauceLabs - clicked on checkout button
+2022-01-17 08:55:16,922 [main] INFO SauceLabs - fname,lname and postal code provided
+2022-01-17 08:55:17,173 [main] INFO SauceLabs - placing order
+2022-01-17 08:55:17,303 [main] INFO SauceLabs - order placed
+2022-01-17 08:55:17,414 [main] INFO SauceLabs - Verifying order
+2022-01-17 08:55:17,436 [main] INFO SauceLabs - order place successfully
+2022-01-17 08:55:18,010 [main] INFO SauceLabs - logged out successfully
+2022-01-17 08:55:19,165 [main] INFO SauceLabs - ####################            -E---N---D-             #######################

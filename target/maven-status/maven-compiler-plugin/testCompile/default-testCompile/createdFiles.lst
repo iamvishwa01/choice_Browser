@@ -1,0 +1,8 @@
+com\SauceLabs\pages\addCartPageObj.class
+com\SauceLabs\testcases\BaseClass.class
+com\SauceLabs\utility\ReadConfig.class
+com\SauceLabs\testcases\addCart_001.class
+com\SauceLabs\pages\SauceLabs_Login.class
+com\SauceLabs\utility\LogUtility.class
+com\SauceLabs\utility\Reporting.class
+com\SauceLabs\testcases\SaucdLogin_Test.class
