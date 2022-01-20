@@ -18,6 +18,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -31,6 +33,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import static com.SauceLabs.utility.LogUtility.*;
+import static com.SauceLabs.utility.LogUtility.info;
 
 
 public class BaseClass {
@@ -72,13 +75,15 @@ public class BaseClass {
             info("Chrome browser launched");
         } else if (br.equals("firefox")) {
             System.setProperty("webdriver.gecko.driver", readConfig.getFdriver());
-            driver = new FirefoxDriver();
-            logger.info("Firefox browser launched");
+            FirefoxOptions options = new FirefoxOptions();
+            options.setProfile(new FirefoxProfile());
+            driver = new FirefoxDriver(options);
+            info("Firefox browser launched");
         } else {
             info("Please select a browser or provide a browser");
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
        info("Browser Maximized");
 //        driver.get(readConfig.getApplicationURL());
@@ -86,7 +91,7 @@ public class BaseClass {
     }
     @AfterClass
         public void Teardown(){
-        driver.quit();
+       // driver.quit();
         endTestCase("Test done !");
     }
 

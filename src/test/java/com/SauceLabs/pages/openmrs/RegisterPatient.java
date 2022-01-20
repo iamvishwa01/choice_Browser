@@ -42,16 +42,25 @@ public class RegisterPatient {
     public void clickNextButton(){
         driver.findElement(nextButton).click();
     }
+    public void clickdropdown(){
+        driver.findElement(genderdropdown).click();
+    }
     public void SelectGender(){
         Select gender = new Select(driver.findElement(genderdropdown));
+
         gender.selectByIndex(0);
     }
+
+
     public void setDay(){
         driver.findElement(day).sendKeys("12");
     }
+    public void ClickMonthDropdown(){
+        driver.findElement(monthDropdown).click();
+    }
     public void setMonth(){
        Select Month = new Select( driver.findElement(monthDropdown));
-       Month.deselectByValue("March");
+       Month.selectByIndex(4);
     }
     public void setYear(){
         driver.findElement(year).sendKeys("2000");

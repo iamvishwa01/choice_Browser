@@ -36,7 +36,7 @@ public class OPenMRS_dashboard {
     public void setChangesecTion(){
         driver.findElement(changesecTion).click();
     }
-    public void setReagisterPatient(){
+    public void ClickReagisterPatient(){
         driver.findElement(reagisterPatient).click();
     }
 }
