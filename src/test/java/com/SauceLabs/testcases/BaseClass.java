@@ -49,6 +49,7 @@ public class BaseClass {
     public static String captureScreenshot(WebDriver driver,String screenshotName) throws IOException {
         String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
+
         File source = ts.getScreenshotAs(OutputType.FILE);
         String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/"+screenshotName+dateName+".png";
         File finalDestination = new File(destination);

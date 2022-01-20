@@ -1,0 +1,14 @@
+2022-01-20 11:58:01,768 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-20 11:58:01,774 [main] INFO SauceLabs - #################                Starting the test          ########################
+2022-01-20 11:58:01,775 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-20 11:58:05,582 [main] INFO SauceLabs - Chrome browser launched
+2022-01-20 11:58:05,801 [main] INFO SauceLabs - Browser Maximized
+2022-01-20 11:58:05,839 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-20 11:58:05,840 [main] INFO SauceLabs - #################                LoginSauceLabs          ########################
+2022-01-20 11:58:05,841 [main] INFO SauceLabs - ****************************************************************************************
+2022-01-20 11:58:16,157 [main] INFO SauceLabs - username entered
+2022-01-20 11:58:16,297 [main] INFO SauceLabs - Password entered
+2022-01-20 11:58:16,465 [main] INFO SauceLabs - Login Button clicked
+2022-01-20 11:58:16,475 [main] INFO SauceLabs - login successful
+2022-01-20 11:58:16,684 [main] INFO SauceLabs - Logout successful
+2022-01-20 11:58:17,584 [main] INFO SauceLabs - ####################            -E---N---D-             #######################
