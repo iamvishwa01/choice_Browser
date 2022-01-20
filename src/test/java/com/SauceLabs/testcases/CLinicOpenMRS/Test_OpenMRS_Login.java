@@ -18,7 +18,7 @@ public class Test_OpenMRS_Login extends BaseClass {
 openmrsLogin o1;
 
 
-@Test
+    @Test(groups = "smoke")
 
 public void A_ValidateTitle(){
 
@@ -34,7 +34,7 @@ public void A_ValidateTitle(){
     }
 }
 
-   @Test
+    @Test(groups = "smoke")
     public void B_LoginToOpenMRS(){
         driver.get(readConfig.getclinicURL());
         info("Loading application URL");

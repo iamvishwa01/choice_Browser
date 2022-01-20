@@ -91,7 +91,7 @@ public class BaseClass {
     }
     @AfterClass
         public void Teardown(){
-       // driver.quit();
+        driver.quit();
         endTestCase("Test done !");
     }
 

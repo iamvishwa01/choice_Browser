@@ -15,7 +15,7 @@ public class SaucdLogin_Test extends BaseClass{
     LogUtility logger = new LogUtility();
     ReadConfig readConfig = new ReadConfig();
     SauceLabs_Login s1;
-    @Test
+    @Test(groups = "sanity")
     public void LoginSauceLabs() throws IOException {
         extentTest = extent.createTest("Validate sauce labs Login");
         startTestCase("LoginSauceLabs");
@@ -40,7 +40,7 @@ public class SaucdLogin_Test extends BaseClass{
             Assert.assertTrue(false);
         }
     }
-    @Test
+    @Test(groups = "sanity")
     public void logout(){
         extentTest = extent.createTest("Validate sauce labs Logout");
         s1 = new SauceLabs_Login(driver);

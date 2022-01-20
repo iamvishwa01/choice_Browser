@@ -9,14 +9,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static com.SauceLabs.utility.LogUtility.info;
+import static com.SauceLabs.utility.LogUtility.startTestCase;
 
 public class Test_Register_Patient extends BaseClass {
 
 
     ReadConfig readConfig = new ReadConfig();
 
-    @Test
+    @Test(groups = "regression")
     public void ALogin() throws InterruptedException {
+        startTestCase("Register Patient");
         driver.get(readConfig.getclinicURL());
         o1 = new openmrsLogin(driver);
         o1.setUsername();
@@ -41,7 +43,7 @@ public class Test_Register_Patient extends BaseClass {
         Thread.sleep(2000);
     }
 
-    @Test
+    @Test(groups = "regression")
     public void XAddpatient(){
 
         rp = new RegisterPatient(driver);

@@ -14,7 +14,7 @@ import static com.SauceLabs.utility.LogUtility.*;
 public class addCart_001 extends BaseClass{
     ReadConfig readConfig = new ReadConfig();
     SauceLabs_Login s1;
-    @Test
+    @Test(groups = "sanity")
     public void LoginSauceLabs() throws IOException {
         extentTest = extent.createTest("Validate sauce labs Login");
         driver.get(readConfig.getApplicationURL());
@@ -32,7 +32,7 @@ public class addCart_001 extends BaseClass{
             Assert.assertTrue(false);
         }
     }
-    @Test
+    @Test(groups = "sanity")
     public void addCart() throws IOException, InterruptedException {
         extentTest = extent.createTest("addCart from sauce labs");
         addCartPageObj ad = new addCartPageObj(driver);
@@ -61,7 +61,7 @@ public class addCart_001 extends BaseClass{
             error("Error in placing order");
         }
     }
-    @Test
+    @Test(groups = "sanity")
     public void logout(){
         extentTest = extent.createTest("Logout from sauce labs");
         s1 = new SauceLabs_Login(driver);
