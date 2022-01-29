@@ -1,6 +1,7 @@
-package com.SauceLabs.testcases;
+package com.SauceLabs.testcases.SauceLabs;
 
 import com.SauceLabs.pages.SauceLabs_Login;
+import com.SauceLabs.testcases.BaseClass;
 import com.SauceLabs.utility.LogUtility;
 import com.SauceLabs.utility.ReadConfig;
 import com.aventstack.extentreports.Status;
@@ -11,7 +12,7 @@ import java.io.IOException;
 
 import static com.SauceLabs.utility.LogUtility.*;
 
-public class SaucdLogin_Test extends BaseClass{
+public class SaucdLogin_Test extends BaseClass {
     LogUtility logger = new LogUtility();
     ReadConfig readConfig = new ReadConfig();
     SauceLabs_Login s1;

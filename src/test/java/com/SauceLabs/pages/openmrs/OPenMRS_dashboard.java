@@ -18,7 +18,14 @@ public class OPenMRS_dashboard {
     By changesecTion = By.id("selected-location");
 
     By reagisterPatient = By.xpath("//a[contains(@id,'registerPatient')]");
-
+    By SearchPatient = By.xpath("//i[@class='icon-search']");
+    By ActiveVisits = By.xpath("//i[@class='icon-calendar']");
+    By vitals= By.xpath("//i[@class='icon-vitals']");  //
+    By Appointment= By.xpath("//i[@class='icon-calendar']");  //
+    By Reports= By.xpath("//i[@class='icon-list-alt']");  //
+    By DataManagement= By.xpath("//i[@class='icon-hdd']");  //
+    By ConfigureMetadata= By.xpath("//i[@class='icon-tasks']");  //
+    By SystemConfig= By.xpath("//i[@class='icon-cogs']");  //
 
 
     public void clickHomePageLogo(){
@@ -32,7 +39,9 @@ public class OPenMRS_dashboard {
         action.moveToElement(menu).perform();
         driver.findElement(adminPage).click();
     }
-
+    public void CLickOnsearchPatient (){
+        driver.findElement(SearchPatient).click();
+    }
     public void setChangesecTion(){
         driver.findElement(changesecTion).click();
     }

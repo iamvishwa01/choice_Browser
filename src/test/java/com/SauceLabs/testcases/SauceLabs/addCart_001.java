@@ -1,7 +1,8 @@
-package com.SauceLabs.testcases;
+package com.SauceLabs.testcases.SauceLabs;
 
 import com.SauceLabs.pages.SauceLabs_Login;
 import com.SauceLabs.pages.addCartPageObj;
+import com.SauceLabs.testcases.BaseClass;
 import com.SauceLabs.utility.ReadConfig;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,12 +12,13 @@ import java.io.IOException;
 import static com.SauceLabs.utility.LogUtility.*;
 
 
-public class addCart_001 extends BaseClass{
+public class addCart_001 extends BaseClass {
     ReadConfig readConfig = new ReadConfig();
     SauceLabs_Login s1;
     @Test(groups = "sanity")
     public void LoginSauceLabs() throws IOException {
         extentTest = extent.createTest("Validate sauce labs Login");
+        startTestCase("Add to cart TestCase");
         driver.get(readConfig.getApplicationURL());
         s1 = new SauceLabs_Login(driver);
         s1.setUsername();
@@ -35,6 +37,7 @@ public class addCart_001 extends BaseClass{
     @Test(groups = "sanity")
     public void addCart() throws IOException, InterruptedException {
         extentTest = extent.createTest("addCart from sauce labs");
+        info("Started adding cart");
         addCartPageObj ad = new addCartPageObj(driver);
         ad.addtoCart();
         ad.clickoncart();
@@ -75,6 +78,7 @@ public class addCart_001 extends BaseClass{
             error("Error in logout");
             extentTest.info("Error in logout");
             Assert.assertTrue(false);
+            endTestCase("addCart test case successfully completed");
         }
     }
 }

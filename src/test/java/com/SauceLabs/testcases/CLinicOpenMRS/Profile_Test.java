@@ -59,6 +59,7 @@ if(driver.getPageSource().contains("My Account")){
             info("logout failed");
             Assert.assertTrue(false);
         }
+        startTestCase("Admin Profile");
     }
 
 }

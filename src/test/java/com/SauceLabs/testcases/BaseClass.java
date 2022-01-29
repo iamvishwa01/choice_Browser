@@ -3,16 +3,12 @@ package com.SauceLabs.testcases;
 
 import com.SauceLabs.pages.openmrs.OPenMRS_dashboard;
 import com.SauceLabs.pages.openmrs.RegisterPatient;
+import com.SauceLabs.pages.openmrs.findPatient;
 import com.SauceLabs.pages.openmrs.openmrsLogin;
 import com.SauceLabs.utility.ReadConfig;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -41,11 +37,12 @@ public class BaseClass {
     public static Logger logger;
    public static WebDriver driver;
     ReadConfig readConfig = new ReadConfig();
-    ExtentReports extent = new ExtentReports();
-    ExtentTest extentTest;
+   public ExtentReports extent = new ExtentReports();
+   public ExtentTest extentTest;
     public OPenMRS_dashboard op;
     public openmrsLogin o1;
     public RegisterPatient rp;
+    public findPatient fp;
     public static String captureScreenshot(WebDriver driver,String screenshotName) throws IOException {
         String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
@@ -67,8 +64,6 @@ public class BaseClass {
     @Parameters(value = "browser")
     @BeforeClass
     public void setup(String br) {
-//        logger = Logger.getLogger("swaglabs");
-//        PropertyConfigurator.configure(System.getProperty("user.dir")+"/configuration/log4j.properties");
         startTestCase("Starting the test");
         if (br.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", readConfig.getCdriver());
