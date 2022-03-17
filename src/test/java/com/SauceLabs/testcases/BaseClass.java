@@ -13,9 +13,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -69,21 +72,42 @@ public class BaseClass {
             System.setProperty("webdriver.chrome.driver", readConfig.getCdriver());
             driver = new ChromeDriver();
             info("Chrome browser launched");
+            driver.manage().window().maximize();
+            info("Browser Maximized");
         } else if (br.equals("firefox")) {
             System.setProperty("webdriver.gecko.driver", readConfig.getFdriver());
             FirefoxOptions options = new FirefoxOptions();
             options.setProfile(new FirefoxProfile());
             driver = new FirefoxDriver(options);
             info("Firefox browser launched");
-        } else {
+            driver.manage().window().maximize();
+            info("Browser Maximized");
+
+        }else  if(br.equals("Edge")){
+            System.setProperty("webdriver.edge.driver",readConfig.getEdgeDriver());
+            driver = new EdgeDriver();
+            info("Microsoft browser launched");
+            driver.manage().window().maximize();
+            info("Browser Maximized");
+        }else if(br.equals("IE_Browser")){
+//            System.setProperty("webdriver.ie.driver",readConfig.getIEdriver());
+//            driver=new InternetExplorerDriver();
+//            info("Internet Explorer browser launched");
+//            driver.manage().window().maximize();
+//            info("Browser Maximized");
+            DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+            capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+            System.setProperty("webdriver.ie.driver",readConfig.getIEdriver());
+            driver = new InternetExplorerDriver(capabilities);
+            driver.manage().window().maximize();
+            info("Browser Maximized");
+        }
+        else {
             info("Please select a browser or provide a browser");
         }
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-       info("Browser Maximized");
-//        driver.get(readConfig.getApplicationURL());
-//        info("Loading application URL");
+
     }
     @AfterClass
         public void Teardown(){

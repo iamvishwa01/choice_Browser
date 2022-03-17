@@ -44,8 +44,12 @@ public class ReadConfig {
         return fdriver;
     }
     public String getIEdriver() {
-        String iedriver = pro.getProperty("iEexplorer");
+        String iedriver = pro.getProperty("IEbrowser");
         return iedriver;
+    }
+    public String getEdgeDriver() {
+        String edgedriver = pro.getProperty("Edge");
+        return edgedriver;
     }
     public String getLogPath(){
         String logpath = pro.getProperty("logpath");

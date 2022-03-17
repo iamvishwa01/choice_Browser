@@ -6,7 +6,7 @@
         <listener class-name="com.SauceLabs.utility.Reporting"/>
     </listeners>
     <test name=" HRM Login page test">
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="IE_Browser"/>
 
 
 
@@ -45,11 +45,11 @@ public void test(){
 <!--       </groups>-->
 
         <classes>
-<!--            <class name="com.SauceLabs.testcases.SauceLabs.SaucdLogin_Test"/>-->
+            <class name="com.SauceLabs.testcases.SauceLabs.SaucdLogin_Test"/>
 <!--            <class name="com.SauceLabs.testcases.SauceLabs.addCart_001"/>-->
 <!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_OpenMRS_Login"/>-->
 <!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_Register_Patient"/>-->
-            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_FindPatients"/>
+<!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_FindPatients"/>-->
         </classes>
     </test>
 </suite>
