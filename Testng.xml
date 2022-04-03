@@ -45,7 +45,7 @@ public void test(){
 <!--       </groups>-->
 
 <!--         <classes>
-            <class name="com.SauceLabs.testcases.SauceLabs.SaucdLogin_Test"/>
+<!--             <class name="com.SauceLabs.testcases.SauceLabs.SaucdLogin_Test"/> -->
 <!--            <class name="com.SauceLabs.testcases.SauceLabs.addCart_001"/>-->
 <!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_OpenMRS_Login"/>-->
 <!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_Register_Patient"/>-->
