@@ -57,7 +57,7 @@ public void test(){
             </run>
         </groups>
         <classes>
-            <class name="practice.testng_tags"></class>
+          <class name="com.SauceLabs.testcases.SauceLabs.addCart_001"/>
         </classes>
     </test>
 </suite>
