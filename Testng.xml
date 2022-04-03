@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="HRM Application">
+    <listeners>
+        <listener class-name="com.SauceLabs.utility.Reporting"/>
+    </listeners>
+    <test name=" HRM Login page test">
+        <parameter name="browser" value="chrome"/>
+
+
+
+<!--  Meta Grouping    -->
+
+<!--<groups>-->
+<!--    <define name="Regression1">-->
+<!--        <include name="regression"></include>-->
+<!--        <include name="sanity"></include>-->
+<!--    </define>-->
+<!--    <run>-->
+<!--        <include name="Regression1"></include>-->
+<!--    </run>-->
+<!--</groups>-->
+<!--
+@Test(groups = "windows.regression")
+public void test(){
+///// piece of code
+}
+
+<!-  grouping // running the test cases tagged as sanity/regression/smoke      -->
+        <!--       <groups>-->
+        <!--           <run>-->
+        <!--               <include name="windows.*"> </include>-->
+<!--                        using regular expression   all the testcase will execute starting with windows keyword      -->
+        <!--           </run>-->
+        <!--       </groups>-->
+
+
+
+<!--  grouping // running the test cases tagged as sanity/regression/smoke      -->
+<!--       <groups>-->
+<!--           <run>-->
+<!--               <include name="sanity"> </include>-->
+<!--           </run>-->
+<!--       </groups>-->
+
+        <classes>
+            <class name="com.SauceLabs.testcases.SauceLabs.SaucdLogin_Test"/>
+<!--            <class name="com.SauceLabs.testcases.SauceLabs.addCart_001"/>-->
+<!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_OpenMRS_Login"/>-->
+<!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_Register_Patient"/>-->
+<!--            <class name="com.SauceLabs.testcases.CLinicOpenMRS.Test_FindPatients"/>-->
+        </classes>
+    </test>
+</suite>
