@@ -34,7 +34,7 @@ public class addCart_001 extends BaseClass {
             Assert.assertTrue(false);
         }
     }
-    @Test(groups = "sanity")
+    @Test(groups = "smoke")
     public void addCart() throws IOException, InterruptedException {
         extentTest = extent.createTest("addCart from sauce labs");
         info("Started adding cart");
