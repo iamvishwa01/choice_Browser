@@ -6,4 +6,3 @@ reqrefnoFTxID
 
 [{"key":"reqrefno","value":"71240","type":"text"}]
 
-[{"key":"FTxID","value":"FTX432","type":"text"}]
